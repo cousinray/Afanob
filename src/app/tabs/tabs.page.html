@@ -1,19 +1,30 @@
-<ion-tabs>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="primary">
+    </ion-buttons>
+    <ion-title>Task Manager</ion-title>
+    <ion-buttons slot="end">
+      <span class="partner">Hi {{partner}}</span>
+      <ion-icon name="log-out" size="large" (click)="confirmLogout()"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-tabs appSwipetab (ionTabsDidChange)="ionTabsDidChange($event)" (tabChange)="onTabChange($event)" #myTabs>
 
-  <ion-tab-bar slot="bottom">
+  <ion-tab-bar slot="top">
     <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+      <ion-icon name="documents-sharp" size="large"></ion-icon>
+      <ion-label>Jobs</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+      <ion-icon name="people-sharp" size="large"></ion-icon>
+      <ion-label>Lawyers</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+      <ion-icon name="file-tray-stacked-sharp" size="large"></ion-icon>
+      <ion-label>History</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 

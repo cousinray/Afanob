@@ -1,1 +1,26 @@
 
+.swipe-area {
+    height: max;
+    width:100%;
+  }
+
+  ion-tabs {
+    margin-top: 56px; // adjust based upon your needs, this is the material toolbar height i think
+    max-height: calc(100vh - 56px); //reduce max height of tab views to adjust for the margin
+}
+
+ion-tab-bar{
+  --color-selected: #ed553b !important;
+
+  ion-icon{
+    font-size: larger !important;
+    
+  }
+
+}
+ion-tite {
+  font-size: medium !important;
+}
+.partner{
+  text-transform: capitalize !important;
+}

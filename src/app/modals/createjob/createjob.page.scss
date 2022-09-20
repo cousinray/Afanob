@@ -1,0 +1,18 @@
+.button{
+    margin-top: 30px; // adjust based upon your needs, this is the material toolbar height i think
+    // max-height: calc(100vh - 40px); //reduce max height of tab views to adjust for the margin
+}
+
+small {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    color: red !important;
+}
+
+
+.asterix {
+    font-weight: bolder !important;
+    color: red !important;
+}

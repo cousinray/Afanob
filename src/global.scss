@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import 'font-fresca.css';
+@import 'font-roboto.css';
+
+.error {
+    text-align: center !important;
+  }
+  .toast-wrapper {
+    background-color:#ed553b !important;
+    // background: darken(#ed4039, 30%) !important;
+  }

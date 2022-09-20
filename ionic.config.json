@@ -1,5 +1,8 @@
 {
   "name": "afanob",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

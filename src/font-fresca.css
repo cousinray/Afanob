@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Fresca';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/Fresca/Fresca-Regular.eot);
+  src: local('Fresca-Regular'), local('Fresca'), url(assets/Fresca/Fresca-Regular.ttf) format('truetype'), url(assets/Fresca/Fresca-Regular.woff) format('woff'), url(assets/Fresca/Fresca-Regular.eot?#iefix) format('embedded-opentype'), url(assets/Fresca/Fresca-Regular.svg#Fresca) format('svg'), url(assets/Fresca/Fresca-Regular.woff2) format('woff2');
+}
+

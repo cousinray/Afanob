@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Assign Job</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Job title</ion-label>
+          <ion-input [(ngModel)]="data.title" name="title"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Work Type</ion-label>
+          <ion-input [(ngModel)]="data.type" name="type"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Assign to</ion-label>
+          <ion-select [(ngModel)]="assignedto" interface="popover"
+            placeholder="Select One">
+            <ion-select-option [value]="{name: lawyer?.name, phone: lawyer.phone}"  *ngFor="let lawyer of lawyers">{{lawyer?.name}}
+            <span class="asterix" *ngIf="lawyer.count> 0">   *{{lawyer.count}}</span>
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Due Date</ion-label>
+          <ion-datetime name="dueDate" [(ngModel)]="data.dueDate" mode="ios" pickerFormat="DDDD MMM D, YYYY" displayFormat="DDDD MMM D, YYYY" min="{{minDate}}"
+            max="{{year + 1}}" value="{{currentDate}}"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="button">
+      <ion-col>
+        <ion-button color="primary" shape="round" expand="block" (click)="createJob(data)">SUBMIT</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-content padding class="login">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/imgs/Afanob.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item no-padding>
+          <ion-label position="floating">Partner</ion-label>
+          <ion-input [(ngModel)]='partner'></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="light" (click)="login(partner)" expand="block">Login</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
